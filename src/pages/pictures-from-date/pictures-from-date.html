@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{label}}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentProfileModal()">
+        <ion-icon ios="ios-add" md="md-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="picture">
+
+  <ion-card class="card-pic" *ngFor="let picture of pictures">
+
+    <img src="{{picture.p_name}}" imageViewer/>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-icon ios="ios-map" md="md-map"  item-start large></ion-icon>
+         <h2>{{picture.location}}</h2>
+         <p>{{picture.hashtag_1}} {{picture.hashtag_2}} {{picture.hashtag_3}}</p>
+       </ion-item>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          {{picture.p_author}}
+        </ion-note>
+      </ion-col>
+    <ion-col>
+      <button  (click)="vote(picture.p_id)" ion-button icon-start clear small>
+        <ion-icon name="heart"></ion-icon>
+        <div>{{picture.p_vote}} Likes</div>
+      </button>
+    </ion-col>
+    <ion-col align-self-center text-center>
+      <ion-note>
+        {{picture.p_date}}
+      </ion-note>
+    </ion-col>
+  </ion-row>
+
+  </ion-card>
+
+</ion-content>

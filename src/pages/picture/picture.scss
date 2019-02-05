@@ -1,0 +1,60 @@
+page-picture {
+
+  .picture {
+    background-image: url('../assets/imgs/BackPicturePage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+}
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+.picture {
+  // background-image: url('../assets/imgs/BackPicturePage.jpg');
+  background-color:white;
+  // background-size: cover;
+  // background-position: center;
+}
+.menu {
+  position: absolute;
+  z-index:1;
+  color:white;
+  font-size:20px;
+  // color:white;
+  // padding-bottom: 200%;
+}
+
+
+.card-pic {
+margin-top: 5%;
+  }
+
+  .button_modal {
+    margin-top: 20%;
+
+  }

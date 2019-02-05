@@ -1,0 +1,31 @@
+page-pictures-from-date {
+  .picture {
+    background-image: url('../assets/imgs/BackPicturePage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .menu {
+    position: absolute;
+    z-index:10;
+    color:black;
+    font-size:20px;
+    color:white;
+  }
+
+  .card-md {
+    margin: 0;
+    margin-bottom: 20px;
+    width:auto;
+  }
+
+
+  .card-pic {
+  margin-top: 5%;
+    }
+
+    .button_modal {
+      margin-top: 20%;
+
+    }
+
+}

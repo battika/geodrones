@@ -1,0 +1,58 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    },
+    "cordova-plugin-googlemaps": {
+      "API_KEY_FOR_IOS": "AIzaSyCAi7wv5MrzlobWswlo6XUnVUIIDFsFeM4",
+      "LOCATION_WHEN_IN_USE_DESCRIPTION": "This app wants to get your location while this app runs only.",
+      "LOCATION_ALWAYS_USAGE_DESCRIPTION": "This app wants to get your location always, even this app runs in background.",
+      "PACKAGE_NAME": "com.GeoDrones"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.GeoDrones"
+    }
+  }
+}

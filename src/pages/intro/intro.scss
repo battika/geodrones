@@ -1,0 +1,49 @@
+page-intro {
+
+  ion-icon {
+          font-size: 50px; //Preferred size here
+      }
+
+  .titlenav {
+    padding-top: 10%;
+    margin-bottom: 15px;
+    // padding-left: 5%;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto-Light';
+    font-size: 25px;
+
+  }
+
+  .back {
+    background-image: url('../assets/imgs/BackPicturePage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .logo {
+    width: 60%;
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .backslide {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+    border-radius: 8px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top:30%
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+
+}

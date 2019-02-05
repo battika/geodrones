@@ -1,0 +1,44 @@
+<ion-content class="picture">
+  <button class="menu" clear="true" ion-button (click)="closeModal()">
+    <ion-icon ios="ios-close" md="md-close"></ion-icon>
+  </button>
+  <br/>
+  <ion-card class="button_modal" >
+    <ion-card-header>
+       Partagez une photo sur GeoDrones
+     </ion-card-header>
+    <ion-item>
+      <ion-label stacked>Lieu de prise de vue</ion-label>
+      <ion-input type="text"  name="location" [(ngModel)]="location" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Pseudo</ion-label>
+      <ion-input type="text"  name="pseudo" [(ngModel)]="pseudo" required></ion-input>
+    </ion-item>
+    <hr>
+    <ion-card-content>
+      Caractérisez votre prise de vue par 3 hashtags
+    </ion-card-content>
+    <ion-item>
+      <ion-label stacked>Hashtag 1</ion-label>
+      <ion-input type="text" name="hash1" [(ngModel)]="hash1" placeholder="#Ville" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Hashtag 2</ion-label>
+      <ion-input type="text" name="hash2" [(ngModel)]="hash2" placeholder="#Soleil" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Hashtag 3</ion-label>
+      <ion-input type="text" name="hash2" [(ngModel)]="hash3" placeholder="#OMG" required></ion-input>
+    </ion-item>
+    <hr>
+    <ion-card-content>
+      Les partages d'images sont soumis à une validation, merci de respecter la vie privée de chacun et de ne pas publier des photos de lieux privés.
+  </ion-card-content>
+  <hr>
+  <button ion-button (click)="getImage()" full color="light">Selectionner l'image à partager</button>
+  <button ion-button (click)="Upload()" full>Partager</button>
+  </ion-card>
+
+
+</ion-content>

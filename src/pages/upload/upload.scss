@@ -1,0 +1,17 @@
+page-upload {
+  .menu {
+    position: absolute;
+    margin-top: 5%;
+    z-index:10;
+    color:white;
+    font-size:25px;
+    margin-bottom: 10%;
+  }
+
+  .picture {
+    background-image: url('../assets/imgs/BackPicturePage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+}
