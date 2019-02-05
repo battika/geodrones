@@ -1,0 +1,79 @@
+<ion-menu [content]="content">
+  <ion-content [style.background-image]="main" style="background-size: cover;background-position: center">
+
+    <!-- <ion-header>
+    <div class="titlenav">GeoDrones</div>
+  </ion-header> -->
+  <div class="meteo">
+    <div class="titlenav">GeoDrones</div>
+    <div class="localisation">{{city}}</div>
+    <div class="localisation"><i>{{meteo_description}}</i></div>
+
+    <div class="deg"> {{temp}}°C</div>
+    <!-- <br/> -->
+    <div class="row" style="padding-top:2%">
+      <div class="col" style="padding-top:10%;margin-left:2%"><img  src="assets/imgs/vent-icon.png"/></div>
+      <ion-col col-8><div class="wind">Vent <div class="meteoinfo">{{windspeed}}<small>km/h</small><br/><div *ngIf="winddeg!==undefined">{{winddeg}}° ({{cardinal}})</div></div></div> </ion-col>
+    </div>
+
+    <div class="row" style="padding-top:2%">
+      <div class="col" style="margin-left:3%"><img src="assets/imgs/humidite-icon.png"/></div>
+      <ion-col col-8><div class="humidity"> Humidité <div class="meteoinfo">{{humidity}}%</div></div>    </ion-col>
+    </div>
+
+    <div class="row" style="padding-top:5%">
+      <div class="col" style="padding-top:10%;margin-left:2%"><img  src="assets/imgs/altitude-icon.png"/></div>
+      <ion-col col-8><div class="wind">Altitude <div class="meteoinfo">{{alti}}<small>m</small></div></div> </ion-col>
+    </div>
+
+    <div class="row" style="padding-top:5%">
+      <div class="col" style="padding-top:5%;margin-left:2%"><img  src="assets/imgs/aimant-icon.png"/></div>
+      <ion-col col-8>
+        <div class="wind">Indice KP
+          <button style="position: absolute; z-index: 10"  ion-button icon-only (click)="OpenKPInfo()" clear>
+              <ion-icon ios="ios-help-circle" md="md-help-circle" style="color:white"></ion-icon>
+            </button>
+
+          <div class="meteoinfo">
+            {{kp}}
+          </div>
+
+        </div>
+
+      </ion-col>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer >
+  <ion-toolbar transparent >
+    <ion-buttons style="color:white">
+      <button (click)="openPageCarte()" menuClose ion-button icon-right style="color:white" >
+        Home
+        <ion-icon ios="ios-map" md="md-map"  item-left large></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button (click)="openPagePicture()" menuClose ion-button icon-right style="color:white">
+        Partage
+        <ion-icon ios="ios-image" md="md-image"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button (click)="getMeteo()" ion-button icon-right style="color:white">
+        <ion-icon ios="ios-refresh" md="md-refresh"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button (click)="openPageInfo()" menuClose ion-button icon-right style="color:white">
+        <ion-icon ios="ios-help-circle" md="md-help-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

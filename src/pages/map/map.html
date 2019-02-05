@@ -1,0 +1,48 @@
+<ion-header></ion-header>
+<ion-content style="background: none transparent;">
+
+  <ion-card style="position: absolute; z-index: 10;margin-top:15%">
+
+    <ion-list>
+      <ion-item>
+        <ion-input size="3" type='text' placeholder="Ville" name="address" [(ngModel)]="address" clearInput></ion-input>
+        <button ion-button item-left clear (click)='openMenu()'>
+          <ion-icon style="font-size: 20px" name="menu"></ion-icon>
+        </button>
+        <button ion-button item-right clear (click)='search(address)'>
+          <ion-icon style="font-size: 20px" ios="ios-search" md="md-search"></ion-icon>
+        </button>
+        <button ion-button item-right clear (click)='geoloc()'>
+          <ion-icon style="font-size: 20px" ios="ios-pin" md="md-pin"></ion-icon>
+        </button>
+        <button ion-button item-right clear (click)="openPagePicture()">
+          <ion-icon style="font-size: 20px" ios="ios-image" md="md-image"></ion-icon>
+        </button>
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
+  <div #map_canvas id="map_canvas"></div>
+
+  <div style="z-index:9; position: absolute; bottom: 5px; left: 0px;width:150px;text-align:center;background:none;box-shadow:none ;margin-left: 10px;">
+   <ion-list radio-group  [(ngModel)]="typeplan" name="typeplan">
+   <ion-item>
+     <ion-label>Plan</ion-label>
+     <ion-radio  (ionSelect)="onItemSelected('ROADMAP')"></ion-radio>
+   </ion-item>
+   <ion-item>
+     <ion-label>Satellite</ion-label>
+     <ion-radio (ionSelect)="onItemSelected('SATELLITE')" ></ion-radio>
+   </ion-item>
+   <ion-item>
+     <ion-label>Hybrid</ion-label>
+     <ion-radio (ionSelect)="onItemSelected('HYBRID')" ></ion-radio>
+   </ion-item>
+   </ion-list>
+</div>
+
+
+  <div id="legend" style="z-index:11; position: absolute; bottom: 10px; right: 0px;background-color:white"><h3>Légende</h3><div><img width="15px" src="assets/imgs/interdit.png"> Zone interdite</div><div><img width="15px" src="assets/imgs/30m.png"> Zone 30m</div><div><img width="15px" src="assets/imgs/50m.png"> Zone 50m</div><div><img width="15px" src="assets/imgs/100m.png"> Zone 100m</div>
+</div>
+
+</ion-content>

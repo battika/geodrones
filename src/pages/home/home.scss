@@ -1,0 +1,94 @@
+page-home {
+
+  .backg {
+    background-color: #DCDCDC;
+    // background-image: linear-gradient(-180deg, #ED4D00 0%, #FF083D) ;
+  }
+
+
+  .picture {
+    background-image: url('../assets/imgs/BackPicturePage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      background: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 36%;
+      // font-size: 2.0em;
+      // width: 100%;
+      font-weight:normal;
+      color: black;
+      font-family: 'Roboto-Light';
+
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      font-family: 'Roboto-Light';
+      font-weight:normal;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+  }
+  // .picture {
+  //   // background-image: url('../assets/imgs/BackPicturePage.jpg');
+  //   // background-color:white;
+  //   // background-size: cover;
+  //   // background-position: center;
+  // }
+  .menu {
+    position: absolute;
+    z-index:1;
+    color:black;
+    font-size:20px;
+    // color:white;
+    // padding-bottom: 200%;
+  }
+
+
+  .card-pic {
+  margin-top: 5%;
+    }
+
+    .button_modal {
+      margin-top: 20%;
+
+    }
+
+    @font-face {
+        font-family: 'Roboto-Light';
+        src: url('../assets/fonts/roboto-light.woff') format('woff'), url('fonts/roboto-light.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Roboto-bold';
+        src: url('../assets/fonts/roboto-bold.woff') format('woff'), url('fonts/roboto-bold.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+}

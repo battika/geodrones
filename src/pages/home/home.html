@@ -1,0 +1,46 @@
+<ion-content class="card-background-page backg" >
+
+  <div style="padding:8px;margin-top:15px">
+    <div class="titleapp">Bienvenue sur Geodrones</div>
+    <div class="subtitleapp">Votre assistant de vol</div>
+
+    <ion-card (click)="openMap()">
+      <img src="assets/imgs/carte.png"/>
+      <div class="card-title" style="color:white">
+        <ion-icon style="font-size:100px" ios="ios-map" md="md-map"  item-start large></ion-icon>
+      </div>
+      <ion-row class="cardfooter" style="background-color:white">
+        <ion-col>
+          <div style="font-family: 'Roboto-Light';font-size:16px" class="text-center">Carte des restrictions</div>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card (click)="openPagePicture()">
+      <img src="assets/imgs/DJI_0008.JPG"/>
+      <div class="card-title" style="color:white">
+        <ion-icon style="font-size:100px" ios="ios-image" md="md-image" item-start large></ion-icon>
+      </div>
+      <ion-row class="cardfooter">
+        <ion-col>
+          <div style="font-family: 'Roboto-Light';font-size:16px"  class="text-center">Meilleurs prises..</div>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+  </div>
+
+  <ion-toolbar transparent>
+    <ion-buttons style="color:black">
+      <button menuToggle ion-button icon-right style="color:black" >
+        Meteo
+        <ion-icon ios="ios-sunny" md="md-sunny"  item-left large></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button (click)="openPageInfo()" menuClose ion-button icon-right style="color:black">
+        <ion-icon ios="ios-help-circle" md="md-help-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-content>

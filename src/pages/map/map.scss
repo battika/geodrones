@@ -1,0 +1,53 @@
+page-map {
+  #floating-panel {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  #map_canvas {
+    // width: 100% !important;
+    // height: 100% !important;
+    height: 90%;
+    // z-index:8;
+    // background: none transparent;
+  }
+
+  #legend {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    text-align: justify;
+  }
+
+  #legend h3 {
+    margin-top: 0;
+    font-size: 13px;
+  }
+  .bg-input {
+    background-color : white;
+    font-size: 15px;
+  }
+  #legend img {
+    /*vertical-align: left;*/
+    text-align: left;
+  }
+  .shadow {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+  }
+  .item-input-inset .item-input-wrapper input {
+  padding-left: 4px;
+  height: 29px;
+  background: transparent;
+  line-height: 18px;
+  font-size : 15%;
+  }
+}

@@ -1,0 +1,141 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+/*METEO*/
+.titlenav {
+  padding-top: 7%;
+  padding-left: 5%;
+  // text-align: center;
+  color: white;
+  font-family: 'Roboto-Light';
+  font-size: 25px;
+}
+
+.titleapp {
+  padding-top: 7%;
+  padding-left: 3%;
+  // text-align: center;
+  color: black;
+  font-family: 'Roboto-bold';
+  font-size: 25px;
+}
+
+.subtitleapp {
+  padding-top: 2%;
+  padding-left: 3%;
+  text-align: left;
+  color: black;
+  font-family: 'Roboto-Light';
+  font-size: 20px;
+}
+
+.logo {
+  margin-top: 3%;
+  background: none;
+}
+.head {
+  padding-top: 10%;
+}
+.meteo{
+  padding-top: 10%;
+  margin-top: 3%;
+}
+h1 {
+  color : white;
+}
+
+.localisation {
+  padding-top: 2%;
+  padding-left: 5%;
+  text-align: left;
+  color: white;
+  font-family: 'Roboto-Light';
+  font-size: 20px;
+}
+.deg {
+  padding-top: 2%;
+  padding-left: 5%;
+
+  text-align: left;
+  color: white;
+  font-size: 55px;
+  font-family: 'Roboto-Light';
+
+}
+
+.meteoinfo{
+  padding-top: 2%;
+  /*padding-left: 5%;*/
+  color: white;
+  font-size: 28px;
+  font-family: 'Roboto-Light';
+}
+
+.humidity {
+  padding-top: 5%;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto-Light';
+
+}
+
+.menubottom {
+  padding-top: 2%;
+  // text-align: right;
+  // padding-right: 5%;
+  color: white;
+}
+
+.roboto {
+  font-family: 'Roboto-Light';
+}
+.robotobold {
+  font-family: 'Roboto-bold';
+}
+
+.wind {
+  font-family: 'Roboto-Light';
+
+  padding-top: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.btninfo {
+  background-color: none;
+}
+
+.info {
+  font-family: 'Roboto-Light';
+  color: inherit;
+}
+hr {
+  background-color: white;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../assets/fonts/roboto-light.woff') format('woff'), url('fonts/roboto-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('../assets/fonts/roboto-bold.woff') format('woff'), url('fonts/roboto-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
